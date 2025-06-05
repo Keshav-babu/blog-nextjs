@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { GetStaticProps } from "next";
 import { Post, getAllPosts } from "../lib/posts";
-import PostCard from "@/components/PostCard";
 
 interface HomeProps {
   initialPosts: Post[];
@@ -56,7 +55,6 @@ export default function HomePage({ initialPosts }: HomeProps) {
         {filteredPosts?.length === 0 ? (
           <p>No posts found.</p>
         ) : (
-          // <PostCard post={filteredPosts} />
           <ul className="space-y-4">
             {filteredPosts?.map((post) => (
               <>

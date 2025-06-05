@@ -16,7 +16,7 @@ export default function QuotePage({ content, author }: QuoteProps) {
       <div className="max-w-xl mx-auto p-6">
         <h1 className="text-2xl font-bold mb-4">Random Quote</h1>
         <div className=" p-4 rounded shadow">
-          <p className="italic text-lg">"{content}"</p>
+          <p className="italic text-lg">&quot;{content}&quot;</p>
           <p className="text-right mt-2 text-sm text-gray-600">– {author}</p>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { slugify } from "@/lib/slugify";
 import { Post, createPost, getAllPosts } from "@/lib/posts";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
